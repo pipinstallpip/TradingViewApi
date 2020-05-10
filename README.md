@@ -14,7 +14,8 @@ pip3 install requests
 if __name__ == '__main__':
     exchange = TradingViewApi.BITTREX
     crypto = 'BTCUSDT'
-    t = TradingViewApi(exchange, crypto)
+    type_v = TradingViewApi.T_1_MINUTE
+    t = TradingViewApi(exchange, crypto, type_v)
     demark_pivot = t.get_pivot_demark_r1()
 ```
 
